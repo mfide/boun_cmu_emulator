@@ -1,0 +1,20 @@
+#
+# Generated - do not edit!
+#
+# NOCDDL
+#
+CND_BASEDIR=`pwd`
+# DEBUG configuration
+CND_ARTIFACT_DIR_DEBUG=dist/DEBUG/production
+CND_ARTIFACT_NAME_DEBUG=CMU_EMUL.X.production.hex
+CND_ARTIFACT_PATH_DEBUG=dist/DEBUG/production/CMU_EMUL.X.production.hex
+CND_PACKAGE_DIR_DEBUG=${CND_DISTDIR}/DEBUG/package
+CND_PACKAGE_NAME_DEBUG=cmuemul.x.tar
+CND_PACKAGE_PATH_DEBUG=${CND_DISTDIR}/DEBUG/package/cmuemul.x.tar
+# RELEASE configuration
+CND_ARTIFACT_DIR_RELEASE=dist/RELEASE/production
+CND_ARTIFACT_NAME_RELEASE=CMU_EMUL.X.production.hex
+CND_ARTIFACT_PATH_RELEASE=dist/RELEASE/production/CMU_EMUL.X.production.hex
+CND_PACKAGE_DIR_RELEASE=${CND_DISTDIR}/RELEASE/package
+CND_PACKAGE_NAME_RELEASE=cmuemul.x.tar
+CND_PACKAGE_PATH_RELEASE=${CND_DISTDIR}/RELEASE/package/cmuemul.x.tar

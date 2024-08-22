@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\aes.c" />
+    <ClCompile Include="..\Source\crc.c" />
+    <ClCompile Include="..\Source\flash.c" />
+    <ClCompile Include="..\Source\io.c" />
+    <ClCompile Include="..\Source\lcd.c" />
+    <ClCompile Include="..\Source\lwip_pic32_enc\enc424j600.c" />
+    <ClCompile Include="..\Source\lwip_pic32_enc\enc424j600if.c" />
+    <ClCompile Include="..\Source\lwip_pic32_enc\lwiplib.c" />
+    <ClCompile Include="..\Source\main.c" />
+    <ClCompile Include="..\Source\menu.c" />
+    <ClCompile Include="..\Source\p32mz0512efe100_vs.c" />
+    <ClCompile Include="..\Source\cmu_emulator.c" />
+    <ClCompile Include="..\Source\printf.c" />
+    <ClCompile Include="..\Source\rtc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\aes.h" />
+    <ClInclude Include="..\Source\crc.h" />
+    <ClInclude Include="..\Source\flash.h" />
+    <ClInclude Include="..\Source\io.h" />
+    <ClInclude Include="..\Source\lcd.h" />
+    <ClInclude Include="..\Source\lwip_pic32_enc\arch\cc.h" />
+    <ClInclude Include="..\Source\lwip_pic32_enc\enc424j600.h" />
+    <ClInclude Include="..\Source\lwip_pic32_enc\enc424j600if.h" />
+    <ClInclude Include="..\Source\lwip_pic32_enc\lwiplib.h" />
+    <ClInclude Include="..\Source\lwip_pic32_enc\lwipopts.h" />
+    <ClInclude Include="..\Source\menu.h" />
+    <ClInclude Include="..\Source\p32mz0512efe100_vs.h" />
+    <ClInclude Include="..\Source\cmu_emulator.h" />
+    <ClInclude Include="..\Source\pic32_config.h" />
+    <ClInclude Include="..\Source\printf.h" />
+    <ClInclude Include="..\Source\rtc.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{AF5AA633-AF1D-468F-9FA4-F1C940D39ACD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>REFCAL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CMUEMU</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\Source\lwip_pic32_enc;..\Source\lwip-2.1.2\src\include;..\Source\lwip-2.1.2;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\lwIP">
+      <UniqueIdentifier>{184d1679-fb5e-42d8-bc1e-49e0d9090b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lwIP">
+      <UniqueIdentifier>{0fe00f06-d645-4a9b-9554-0d149f49a350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PIC32">
+      <UniqueIdentifier>{2df5edce-3e11-4ab1-b52d-857b80b943bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PIC32">
+      <UniqueIdentifier>{6c50b135-813d-450e-ae5a-19d6dafc2361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lwIP\arch">
+      <UniqueIdentifier>{353573fa-ede7-4044-a655-ee4df87f2782}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\lcd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\lwip_pic32_enc\enc424j600if.c">
+      <Filter>Source Files\lwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\lwip_pic32_enc\enc424j600.c">
+      <Filter>Source Files\lwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\lwip_pic32_enc\lwiplib.c">
+      <Filter>Source Files\lwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\p32mz0512efe100_vs.c">
+      <Filter>Source Files\PIC32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\rtc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\flash.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\menu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\printf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\aes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\crc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\cmu_emulator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\lcd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\p32mz0512efe100_vs.h">
+      <Filter>Header Files\PIC32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\lwip_pic32_enc\enc424j600.h">
+      <Filter>Header Files\lwIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\lwip_pic32_enc\enc424j600if.h">
+      <Filter>Header Files\lwIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\lwip_pic32_enc\lwiplib.h">
+      <Filter>Header Files\lwIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\lwip_pic32_enc\lwipopts.h">
+      <Filter>Header Files\lwIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\lwip_pic32_enc\arch\cc.h">
+      <Filter>Header Files\lwIP\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\rtc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\flash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\printf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\aes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\cmu_emulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\pic32_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

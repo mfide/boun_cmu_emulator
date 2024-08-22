@@ -1,0 +1,2 @@
+xc32-objcopy -I ihex --output-target=binary ${ImagePath} ${ImageDir}\\Output.bin
+hexmate ${ImagePath} -FILL=w1:0xFF@0x1D000000:0x1D07FFFB +-CK=0x1D000000-0x1D07FFFB@0x1D07FFFCW-4 -O${ImagePath} -LOGFILE=${ImageDir}\\Hexmate.log
