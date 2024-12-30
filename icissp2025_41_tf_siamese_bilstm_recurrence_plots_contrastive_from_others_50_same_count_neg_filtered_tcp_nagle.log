@@ -1,0 +1,68 @@
+2024-10-22 09:17:48.770 INFO CPU                : AMD Ryzen Threadripper 3990X 64-Core Processor
+2024-10-22 09:17:48.771 INFO RAM                : 252 GB
+2024-10-22 09:17:48.771 INFO OS                 : Linux-6.8.0-47-generic-x86_64-with-glibc2.39
+2024-10-22 09:17:48.771 INFO Python Version     : 3.12.3
+2024-10-22 09:17:48.771 INFO TensorFlow Version : 2.17.0
+2024-10-22 09:17:48.771 INFO ------------------------------------------------------------------
+2024-10-22 09:17:48.771 INFO 
+2024-10-22 09:20:34.838 INFO    User No:  0   SNR_db: None   i_EER = 0.332   i_ZMR = 1.000   i_ACC = 0.669
+2024-10-22 09:22:35.063 INFO    User No:  1   SNR_db: None   i_EER = 0.144   i_ZMR = 0.795   i_ACC = 0.860
+2024-10-22 09:24:37.727 INFO    User No:  2   SNR_db: None   i_EER = 0.195   i_ZMR = 0.890   i_ACC = 0.804
+2024-10-22 09:26:36.802 INFO    User No:  3   SNR_db: None   i_EER = 0.228   i_ZMR = 0.785   i_ACC = 0.773
+2024-10-22 09:28:34.125 INFO    User No:  4   SNR_db: None   i_EER = 0.064   i_ZMR = 0.330   i_ACC = 0.940
+2024-10-22 09:30:35.920 INFO    User No:  5   SNR_db: None   i_EER = 0.100   i_ZMR = 0.775   i_ACC = 0.902
+2024-10-22 09:32:30.967 INFO    User No:  6   SNR_db: None   i_EER = 0.045   i_ZMR = 0.455   i_ACC = 0.953
+2024-10-22 09:34:28.051 INFO    User No:  7   SNR_db: None   i_EER = 0.100   i_ZMR = 0.685   i_ACC = 0.898
+2024-10-22 09:36:29.478 INFO    User No:  8   SNR_db: None   i_EER = 0.144   i_ZMR = 0.810   i_ACC = 0.858
+2024-10-22 09:38:30.072 INFO    User No:  9   SNR_db: None   i_EER = 0.120   i_ZMR = 0.360   i_ACC = 0.882
+2024-10-22 09:40:31.687 INFO    User No: 10   SNR_db: None   i_EER = 0.185   i_ZMR = 0.775   i_ACC = 0.813
+2024-10-22 09:46:10.740 INFO    User No: 11   SNR_db: None   i_EER = 0.375   i_ZMR = 0.955   i_ACC = 0.624
+2024-10-22 09:48:12.284 INFO    User No: 12   SNR_db: None   i_EER = 0.116   i_ZMR = 0.415   i_ACC = 0.884
+2024-10-22 09:50:12.117 INFO    User No: 13   SNR_db: None   i_EER = 0.160   i_ZMR = 0.995   i_ACC = 0.838
+2024-10-22 09:52:32.488 INFO    User No: 14   SNR_db: None   i_EER = 0.225   i_ZMR = 0.780   i_ACC = 0.773
+2024-10-22 09:57:37.544 INFO    User No: 15   SNR_db: None   i_EER = 0.272   i_ZMR = 0.640   i_ACC = 0.729
+2024-10-22 09:59:40.309 INFO    User No: 16   SNR_db: None   i_EER = 0.332   i_ZMR = 0.930   i_ACC = 0.669
+2024-10-22 10:05:17.499 INFO    User No: 17   SNR_db: None   i_EER = 0.352   i_ZMR = 0.975   i_ACC = 0.649
+2024-10-22 10:07:24.138 INFO    User No: 18   SNR_db: None   i_EER = 0.240   i_ZMR = 1.000   i_ACC = 0.758
+2024-10-22 10:09:25.948 INFO    User No: 19   SNR_db: None   i_EER = 0.270   i_ZMR = 0.855   i_ACC = 0.729
+2024-10-22 10:13:13.991 INFO    User No: 20   SNR_db: None   i_EER = 0.164   i_ZMR = 0.710   i_ACC = 0.838
+2024-10-22 10:15:15.357 INFO    User No: 21   SNR_db: None   i_EER = 0.288   i_ZMR = 1.000   i_ACC = 0.713
+2024-10-22 10:17:22.672 INFO    User No: 22   SNR_db: None   i_EER = 0.180   i_ZMR = 0.995   i_ACC = 0.818
+2024-10-22 10:19:34.327 INFO    User No: 23   SNR_db: None   i_EER = 0.095   i_ZMR = 0.675   i_ACC = 0.904
+2024-10-22 10:22:40.047 INFO    User No: 24   SNR_db: None   i_EER = 0.220   i_ZMR = 0.990   i_ACC = 0.782
+2024-10-22 10:24:48.718 INFO    User No: 25   SNR_db: None   i_EER = 0.396   i_ZMR = 0.955   i_ACC = 0.604
+2024-10-22 10:26:50.101 INFO    User No: 26   SNR_db: None   i_EER = 0.165   i_ZMR = 0.800   i_ACC = 0.833
+2024-10-22 10:28:51.003 INFO    User No: 27   SNR_db: None   i_EER = 0.385   i_ZMR = 0.990   i_ACC = 0.613
+2024-10-22 10:30:48.770 INFO    User No: 28   SNR_db: None   i_EER = 0.240   i_ZMR = 1.000   i_ACC = 0.758
+2024-10-22 10:32:57.753 INFO    User No: 29   SNR_db: None   i_EER = 0.305   i_ZMR = 0.925   i_ACC = 0.693
+2024-10-22 10:34:57.234 INFO    User No: 30   SNR_db: None   i_EER = 0.288   i_ZMR = 0.975   i_ACC = 0.713
+2024-10-22 10:38:08.261 INFO    User No: 31   SNR_db: None   i_EER = 0.305   i_ZMR = 0.995   i_ACC = 0.693
+2024-10-22 10:43:47.507 INFO    User No: 32   SNR_db: None   i_EER = 0.180   i_ZMR = 0.995   i_ACC = 0.822
+2024-10-22 10:45:45.671 INFO    User No: 33   SNR_db: None   i_EER = 0.310   i_ZMR = 0.940   i_ACC = 0.689
+2024-10-22 10:48:21.234 INFO    User No: 34   SNR_db: None   i_EER = 0.428   i_ZMR = 0.995   i_ACC = 0.573
+2024-10-22 10:51:22.616 INFO    User No: 35   SNR_db: None   i_EER = 0.290   i_ZMR = 0.970   i_ACC = 0.709
+2024-10-22 10:53:23.617 INFO    User No: 36   SNR_db: None   i_EER = 0.095   i_ZMR = 0.855   i_ACC = 0.904
+2024-10-22 10:56:34.878 INFO    User No: 37   SNR_db: None   i_EER = 0.285   i_ZMR = 1.000   i_ACC = 0.713
+2024-10-22 10:58:39.153 INFO    User No: 38   SNR_db: None   i_EER = 0.212   i_ZMR = 0.975   i_ACC = 0.789
+2024-10-22 11:00:45.357 INFO    User No: 39   SNR_db: None   i_EER = 0.295   i_ZMR = 0.985   i_ACC = 0.704
+2024-10-22 11:02:45.143 INFO    User No: 40   SNR_db: None   i_EER = 0.336   i_ZMR = 0.935   i_ACC = 0.664
+2024-10-22 11:04:45.586 INFO    User No: 41   SNR_db: None   i_EER = 0.230   i_ZMR = 0.985   i_ACC = 0.769
+2024-10-22 11:06:55.319 INFO    User No: 42   SNR_db: None   i_EER = 0.320   i_ZMR = 0.975   i_ACC = 0.682
+2024-10-22 11:08:50.917 INFO    User No: 43   SNR_db: None   i_EER = 0.245   i_ZMR = 0.920   i_ACC = 0.753
+2024-10-22 11:10:50.203 INFO    User No: 44   SNR_db: None   i_EER = 0.176   i_ZMR = 0.995   i_ACC = 0.824
+2024-10-22 11:12:50.650 INFO    User No: 45   SNR_db: None   i_EER = 0.120   i_ZMR = 0.555   i_ACC = 0.882
+2024-10-22 11:14:52.205 INFO    User No: 46   SNR_db: None   i_EER = 0.105   i_ZMR = 0.660   i_ACC = 0.893
+2024-10-22 11:16:52.510 INFO    User No: 47   SNR_db: None   i_EER = 0.285   i_ZMR = 0.830   i_ACC = 0.713
+2024-10-22 11:18:53.090 INFO    User No: 48   SNR_db: None   i_EER = 0.040   i_ZMR = 0.175   i_ACC = 0.958
+2024-10-22 11:20:53.539 INFO    User No: 49   SNR_db: None   i_EER = 0.175   i_ZMR = 0.845   i_ACC = 0.824
+2024-10-22 11:23:01.570 INFO    User No: 50   SNR_db: None   i_EER = 0.115   i_ZMR = 0.970   i_ACC = 0.884
+2024-10-22 11:23:01.571 INFO Results for epochs = 200.000 SNR_db: None test_imposter_count = 5.000 total_cells = 32.000 limit_user_count = -1.000 test_average_user_count = 128.000 batchsize = 32.000
+2024-10-22 11:23:01.571 INFO i_EER = [0.332, 0.144, 0.195, 0.228, 0.064, 0.100, 0.045, 0.100, 0.144, 0.120, 0.185, 0.375, 0.116, 0.160, 0.225, 0.272, 0.332, 0.352, 0.240, 0.270, 0.164, 0.288, 0.180, 0.095, 0.220, 0.396, 0.165, 0.385, 0.240, 0.305, 0.288, 0.305, 0.180, 0.310, 0.428, 0.290, 0.095, 0.285, 0.212, 0.295, 0.336, 0.230, 0.320, 0.245, 0.176, 0.120, 0.105, 0.285, 0.040, 0.175, 0.115] 
+2024-10-22 11:23:01.571 INFO EER mean = 0.221   std = 0.097
+2024-10-22 11:23:01.571 INFO ZMR mean = 0.839   std = 0.200
+2024-10-22 11:23:01.571 INFO ACC mean = 0.779   std = 0.097
+2024-10-22 11:23:01.572 INFO ------------------------------------------------------------------
+2024-10-22 11:23:01.572 INFO 
+2024-10-22 11:23:01.572 INFO Average Slope of EER = 0.000 %/dB [min: 0.221, max: 0.221]    Average Slope of ZMR = 0.000 %/dB [min: 0.839, max: 0.839]
+2024-10-22 11:23:01.572 INFO ------------------------------------------------------------------
+2024-10-22 11:23:01.572 INFO 

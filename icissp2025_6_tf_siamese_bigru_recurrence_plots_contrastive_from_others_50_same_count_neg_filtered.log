@@ -1,0 +1,101 @@
+2024-10-09 18:27:43.950 INFO CPU                : AMD Ryzen Threadripper 3990X 64-Core Processor
+2024-10-09 18:27:43.951 INFO RAM                : 252 GB
+2024-10-09 18:27:43.951 INFO OS                 : Linux-6.8.0-45-generic-x86_64-with-glibc2.39
+2024-10-09 18:27:43.951 INFO Python Version     : 3.12.3
+2024-10-09 18:27:43.951 INFO TensorFlow Version : 2.17.0
+2024-10-09 18:27:43.951 INFO ------------------------------------------------------------------
+2024-10-09 18:27:43.951 INFO 
+2024-10-09 18:27:45.612 INFO Model: "functional_1"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                  ┃ Output Shape              ┃         Param # ┃ Connected to               ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ left (InputLayer)             │ (None, 128, 961)          │               0 │ -                          │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│ right (InputLayer)            │ (None, 128, 961)          │               0 │ -                          │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│ sequential (Sequential)       │ (None, 32)                │         216,036 │ left[0][0], right[0][0]    │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│    └ batch_normalization      │ (None, 128, 961)          │           3,844 │ -                          │
+│ (BatchNormalization)          │                           │                 │                            │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│    └ bidirectional            │ (None, 128, 64)           │         191,040 │ -                          │
+│ (Bidirectional)               │                           │                 │                            │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│    └ dropout (Dropout)        │ (None, 128, 64)           │               0 │ -                          │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│    └ batch_normalization_1    │ (None, 128, 64)           │             256 │ -                          │
+│ (BatchNormalization)          │                           │                 │                            │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│    └ bidirectional_1          │ (None, 64)                │          18,816 │ -                          │
+│ (Bidirectional)               │                           │                 │                            │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│    └ unit_normalization       │ (None, 64)                │               0 │ -                          │
+│ (UnitNormalization)           │                           │                 │                            │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│    └ dense (Dense)            │ (None, 32)                │           2,080 │ -                          │
+├───────────────────────────────┼───────────────────────────┼─────────────────┼────────────────────────────┤
+│ lambda (Lambda)               │ (None, 1)                 │               0 │ sequential[0][0],          │
+│                               │                           │                 │ sequential[1][0]           │
+└───────────────────────────────┴───────────────────────────┴─────────────────┴────────────────────────────┘
+ Total params: 216,036 (843.89 KB)
+ Trainable params: 213,986 (835.88 KB)
+ Non-trainable params: 2,050 (8.01 KB)
+
+2024-10-09 18:34:47.820 INFO    User No:  0   SNR_db: None   i_EER = 0.100   i_ZMR = 0.675   i_ACC = 0.898
+2024-10-09 18:41:42.216 INFO    User No:  1   SNR_db: None   i_EER = 0.012   i_ZMR = 0.065   i_ACC = 0.989
+2024-10-09 18:48:49.212 INFO    User No:  2   SNR_db: None   i_EER = 0.060   i_ZMR = 0.420   i_ACC = 0.938
+2024-10-09 18:53:55.079 INFO    User No:  3   SNR_db: None   i_EER = 0.050   i_ZMR = 0.150   i_ACC = 0.949
+2024-10-09 18:56:29.080 INFO    User No:  4   SNR_db: None   i_EER = 0.025   i_ZMR = 0.060   i_ACC = 0.973
+2024-10-09 18:59:12.983 INFO    User No:  5   SNR_db: None   i_EER = 0.032   i_ZMR = 0.205   i_ACC = 0.969
+2024-10-09 19:01:45.818 INFO    User No:  6   SNR_db: None   i_EER = 0.025   i_ZMR = 0.040   i_ACC = 0.973
+2024-10-09 19:04:23.533 INFO    User No:  7   SNR_db: None   i_EER = 0.010   i_ZMR = 0.010   i_ACC = 0.989
+2024-10-09 19:07:00.155 INFO    User No:  8   SNR_db: None   i_EER = 0.008   i_ZMR = 0.010   i_ACC = 0.993
+2024-10-09 19:11:43.037 INFO    User No:  9   SNR_db: None   i_EER = 0.028   i_ZMR = 0.080   i_ACC = 0.973
+2024-10-09 19:16:55.022 INFO    User No: 10   SNR_db: None   i_EER = 0.060   i_ZMR = 0.535   i_ACC = 0.938
+2024-10-09 19:23:35.498 INFO    User No: 11   SNR_db: None   i_EER = 0.248   i_ZMR = 0.775   i_ACC = 0.753
+2024-10-09 19:28:12.089 INFO    User No: 12   SNR_db: None   i_EER = 0.032   i_ZMR = 0.280   i_ACC = 0.969
+2024-10-09 19:30:23.887 INFO    User No: 13   SNR_db: None   i_EER = 0.030   i_ZMR = 0.495   i_ACC = 0.969
+2024-10-09 19:37:32.378 INFO    User No: 14   SNR_db: None   i_EER = 0.045   i_ZMR = 0.160   i_ACC = 0.953
+2024-10-09 19:39:31.788 INFO    User No: 15   SNR_db: None   i_EER = 0.072   i_ZMR = 0.345   i_ACC = 0.929
+2024-10-09 19:42:41.626 INFO    User No: 16   SNR_db: None   i_EER = 0.072   i_ZMR = 0.220   i_ACC = 0.929
+2024-10-09 19:44:52.069 INFO    User No: 17   SNR_db: None   i_EER = 0.060   i_ZMR = 0.625   i_ACC = 0.938
+2024-10-09 19:51:17.163 INFO    User No: 18   SNR_db: None   i_EER = 0.120   i_ZMR = 0.345   i_ACC = 0.878
+2024-10-09 19:57:43.452 INFO    User No: 19   SNR_db: None   i_EER = 0.035   i_ZMR = 0.745   i_ACC = 0.964
+2024-10-09 20:00:19.604 INFO    User No: 20   SNR_db: None   i_EER = 0.045   i_ZMR = 0.190   i_ACC = 0.953
+2024-10-09 20:07:28.243 INFO    User No: 21   SNR_db: None   i_EER = 0.065   i_ZMR = 0.160   i_ACC = 0.933
+2024-10-09 20:10:07.817 INFO    User No: 22   SNR_db: None   i_EER = 0.160   i_ZMR = 0.395   i_ACC = 0.842
+2024-10-09 20:12:49.776 INFO    User No: 23   SNR_db: None   i_EER = 0.048   i_ZMR = 0.105   i_ACC = 0.953
+2024-10-09 20:15:21.618 INFO    User No: 24   SNR_db: None   i_EER = 0.064   i_ZMR = 0.360   i_ACC = 0.938
+2024-10-09 20:18:03.847 INFO    User No: 25   SNR_db: None   i_EER = 0.235   i_ZMR = 0.830   i_ACC = 0.764
+2024-10-09 20:20:23.879 INFO    User No: 26   SNR_db: None   i_EER = 0.125   i_ZMR = 0.360   i_ACC = 0.873
+2024-10-09 20:22:47.170 INFO    User No: 27   SNR_db: None   i_EER = 0.070   i_ZMR = 0.425   i_ACC = 0.929
+2024-10-09 20:25:38.414 INFO    User No: 28   SNR_db: None   i_EER = 0.080   i_ZMR = 0.690   i_ACC = 0.922
+2024-10-09 20:31:45.247 INFO    User No: 29   SNR_db: None   i_EER = 0.076   i_ZMR = 0.290   i_ACC = 0.924
+2024-10-09 20:34:21.593 INFO    User No: 30   SNR_db: None   i_EER = 0.040   i_ZMR = 0.900   i_ACC = 0.958
+2024-10-09 20:37:04.383 INFO    User No: 31   SNR_db: None   i_EER = 0.115   i_ZMR = 0.710   i_ACC = 0.884
+2024-10-09 20:39:18.438 INFO    User No: 32   SNR_db: None   i_EER = 0.076   i_ZMR = 0.305   i_ACC = 0.924
+2024-10-09 20:41:43.287 INFO    User No: 33   SNR_db: None   i_EER = 0.085   i_ZMR = 0.140   i_ACC = 0.913
+2024-10-09 20:48:28.697 INFO    User No: 34   SNR_db: None   i_EER = 0.050   i_ZMR = 0.870   i_ACC = 0.949
+2024-10-09 20:50:56.934 INFO    User No: 35   SNR_db: None   i_EER = 0.045   i_ZMR = 0.115   i_ACC = 0.953
+2024-10-09 20:53:39.199 INFO    User No: 36   SNR_db: None   i_EER = 0.028   i_ZMR = 0.035   i_ACC = 0.973
+2024-10-09 21:00:52.005 INFO    User No: 37   SNR_db: None   i_EER = 0.025   i_ZMR = 0.120   i_ACC = 0.973
+2024-10-09 21:03:43.438 INFO    User No: 38   SNR_db: None   i_EER = 0.048   i_ZMR = 0.235   i_ACC = 0.953
+2024-10-09 21:06:01.191 INFO    User No: 39   SNR_db: None   i_EER = 0.060   i_ZMR = 0.190   i_ACC = 0.942
+2024-10-09 21:08:37.704 INFO    User No: 40   SNR_db: None   i_EER = 0.140   i_ZMR = 0.760   i_ACC = 0.862
+2024-10-09 21:12:22.319 INFO    User No: 41   SNR_db: None   i_EER = 0.065   i_ZMR = 0.310   i_ACC = 0.933
+2024-10-09 21:18:21.309 INFO    User No: 42   SNR_db: None   i_EER = 0.050   i_ZMR = 0.645   i_ACC = 0.949
+2024-10-09 21:20:34.011 INFO    User No: 43   SNR_db: None   i_EER = 0.084   i_ZMR = 0.340   i_ACC = 0.918
+2024-10-09 21:23:10.059 INFO    User No: 44   SNR_db: None   i_EER = 0.045   i_ZMR = 0.130   i_ACC = 0.953
+2024-10-09 21:25:48.982 INFO    User No: 45   SNR_db: None   i_EER = 0.025   i_ZMR = 0.070   i_ACC = 0.973
+2024-10-09 21:30:41.208 INFO    User No: 46   SNR_db: None   i_EER = 0.010   i_ZMR = 0.015   i_ACC = 0.989
+2024-10-09 21:35:32.779 INFO    User No: 47   SNR_db: None   i_EER = 0.515   i_ZMR = 0.980   i_ACC = 0.484
+2024-10-09 21:38:18.799 INFO    User No: 48   SNR_db: None   i_EER = 0.000   i_ZMR = 0.000   i_ACC = 0.998
+2024-10-09 21:40:52.759 INFO    User No: 49   SNR_db: None   i_EER = 0.030   i_ZMR = 0.130   i_ACC = 0.969
+2024-10-09 21:43:31.855 INFO    User No: 50   SNR_db: None   i_EER = 0.040   i_ZMR = 0.100   i_ACC = 0.958
+2024-10-09 21:43:31.855 INFO Results for epochs = 200.000 SNR_db: None filter_outliers_first: True test_imposter_count = 5.000 total_cells = 32.000 limit_user_count = -1.000 test_average_user_count = 128.000 batchsize = 32.000
+2024-10-09 21:43:31.856 INFO i_EER = [0.100, 0.012, 0.060, 0.050, 0.025, 0.032, 0.025, 0.010, 0.008, 0.028, 0.060, 0.248, 0.032, 0.030, 0.045, 0.072, 0.072, 0.060, 0.120, 0.035, 0.045, 0.065, 0.160, 0.048, 0.064, 0.235, 0.125, 0.070, 0.080, 0.076, 0.040, 0.115, 0.076, 0.085, 0.050, 0.045, 0.028, 0.025, 0.048, 0.060, 0.140, 0.065, 0.050, 0.084, 0.045, 0.025, 0.010, 0.515, 0.000, 0.030, 0.040] 
+2024-10-09 21:43:31.856 INFO EER mean = 0.072   std = 0.080
+2024-10-09 21:43:31.856 INFO ZMR mean = 0.336   std = 0.275
+2024-10-09 21:43:31.856 INFO ACC mean = 0.928   std = 0.080
+2024-10-09 21:43:31.856 INFO ------------------------------------------------------------------
+2024-10-09 21:43:31.856 INFO 
